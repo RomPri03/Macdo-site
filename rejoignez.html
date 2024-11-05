@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejoignez notre équipe - McDo Amiens</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/plugins.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/pe-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #791111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form label {
+            font-weight: bold;
+        }
+        form button {
+            padding: 10px;
+            background-color: #d00000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        form button:hover {
+            background-color: #a30000;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Retour A la Page Principal -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="accueil.html"><span class="theme-accent-color">Macdo</span></a> <!-- Lien vers la page principale -->
+                </div>
+        
+                <!-- Tout les Lien de page dans la barre Principal -->
+                <div class="collapse navbar-collapse" id="main-navigation">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="menu.html">Menu</a></li> <!-- Va vers la page menu -->
+                        <li><a href="extra.html">Extra</a></li> <!-- Va vers la page Extra -->
+                        <li><a href="about-us.html">A Propos de nous</a></li> <!--Va vers la page A propos de nous -->
+                        <li><a href="formulaire.html">Formulaire</a></li> <!-- Va vers la page Formulaire-->
+                        <li><a href="rejoignez.html">Rejoint Nous</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+  
+        
+        
+    </header>
+
+        <h1>Rejoignez notre équipe</h1>
+
+<div class="container">
+    <h2>Postulez chez McDo Amiens</h2>
+    <p>Nous recherchons des personnes dynamiques, motivées et prêtes à rejoindre une équipe conviviale. Remplissez le formulaire ci-dessous pour soumettre votre candidature.</p>
+
+    <!--Site qui permet d'envoyer le formulaire a mon mails sans-->
+    <form action="https://formspree.io/f/xgvekvwa" method="post" enctype="text/plain">
+        <label for="nom">Nom complet :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Adresse e-mail :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telephone">Numéro de téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required>
+
+        <label for="message">Pourquoi souhaitez-vous rejoindre notre équipe ?</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label for="cv">Téléchargez votre CV :</label>
+        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+
+        <button type="submit">Envoyer ma candidature</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 McDonald's Amiens. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>

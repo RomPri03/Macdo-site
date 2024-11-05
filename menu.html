@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgers de McDonald's</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/plugins.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/pe-icons.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Retour A la Page Principal -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="accueil.html"><span class="theme-accent-color">Macdo</span></a> <!-- Lien vers la page principale -->
+                </div>
+        
+                <!-- Tout les Lien de page dans la barre Principal -->
+                <div class="collapse navbar-collapse" id="main-navigation">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="cv.html">CV</a></li> <!-- Va vers la page CV -->
+                        <li><a href="extra.html">Extra</a></li> <!-- Va vers la page Extra -->
+                        <li><a href="about-us.html">A Propos de nous</a></li> <!--Va vers la page A propos de nous -->
+                        <li><a href="formulaire.html">Formulaire</a></li> <!-- Va vers la page Formulaire-->
+                        <li><a href="rejoignez.html">Rejoint Nous</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+  
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            h1 {
+                text-align: center;
+                color: #d00000;
+            }
+            .burger {
+                display: inline-block;
+                margin: 15px;
+                text-align: center;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: white;
+            }
+            .burger img {
+                width: 200px;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            .ingredients {
+                display: none;
+                margin-top: 10px;
+            }
+            .show {
+                display: block;
+            }
+            .toggle-link {
+                color: #007BFF;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style>       
+        
+    </header>
+
+    
+    <h1>Les Burgers et Wraps de McDonald's</h1>
+    
+    <!-- Big Mac -->
+    <div class="burger">
+        <img src="assets/image Burger/Big Mac.jfif" alt="Big Mac">
+        <h3>Big Mac</h3>
+        <a href="#!" class="toggle-link" onclick="document.getElementById('bigmac-ingredients').classList.toggle('show')">Afficher les ingrédients</a>
+        <div id="bigmac-ingredients" class="ingredients">
+            <p>Ingrédients : Pain, 2 steaks hachés, fromage, sauce spéciale, laitue, cornichons, oignons.</p>
+        </div>
+    </div>
+    
+    <!-- Royal Cheese -->
+    <div class="burger">
+        <img src="assets/image Burger/Royal Cheese.jfif" alt="Royal Cheese">
+        <h3>Royal Cheese</h3>
+        <a href="#!" class="toggle-link" onclick="document.getElementById('royalcheese-ingredients').classList.toggle('show')">Afficher les ingrédients</a>
+        <div id="royalcheese-ingredients" class="ingredients">
+            <p>Ingrédients : Pain, steak haché, fromage, mayonnaise, ketchup, cornichons, oignons.</p>
+        </div>
+    </div>
+    
+    <!-- McChicken -->
+    <div class="burger">
+        <img src="assets/image Burger/Mc Chiken.jfif" alt="McChicken">
+        <h3>McChicken</h3>
+        <a href="#!" class="toggle-link" onclick="document.getElementById('mcchicken-ingredients').classList.toggle('show')">Afficher les ingrédients</a>
+        <div id="mcchicken-ingredients" class="ingredients">
+            <p>Ingrédients : Pain, poulet pané, laitue, mayonnaise.</p>
+        </div>
+    </div>
+    
+    <!-- Big Tasty -->
+    <div class="burger">
+        <img src="assets/image Burger/Big Tasty.jfif" alt="Big Tasty">
+        <h3>Big Tasty</h3>
+        <a href="#!" class="toggle-link" onclick="document.getElementById('bigtasty-ingredients').classList.toggle('show')">Afficher les ingrédients</a>
+        <div id="bigtasty-ingredients" class="ingredients">
+            <p>Ingrédients : Pain, steak haché, fromage, sauce Big Tasty, tomates, laitue, oignons.</p>
+        </div>
+    </div>
+    
+    <!-- Nouveau burgers et wraps -->
+    
+    <!-- Filet-O-Fish -->
+    <div class="burger">
+        <img src="assets/image Burger/Filet.jfif" alt="Filet-O-Fish">
+        <h3>Filet-O-Fish</h3>
+        <a href="#!" class="toggle-link" onclick="document.getElementById('filetofish-ingredients').classList.toggle('show')">Afficher les ingrédients</a>
+        <div id="filetofish-ingredients" class="ingredients">
+            <p>Ingrédients : Pain, poisson pané, fromage, sauce tartare.</p>
+        </div>
+    </div>
+    
+    <!-- Le 280 -->
+    <div class="burger">
+        <img src="assets/image Burger/280.jfif" alt="Le 280">
+        <h3>Le 280</h3>
+        <a href="#!" class="toggle-link" onclick="document.getElementById('le280-ingredients').classList.toggle('show')">Afficher les ingrédients</a>
+        <div id="le280-ingredients" class="ingredients">
+            <p>Ingrédients : Pain spécial, steak haché, fromage fondu, laitue, tomate, sauce 280.</p>
+        </div>
+    </div>
+    
+    <!-- CBO -->
+    <div class="burger">
+        <img src="assets/image Burger/CBO.jfif" alt="CBO">
+        <h3>CBO (Chicken Bacon Onion)</h3>
+        <a href="#!" class="toggle-link" onclick="document.getElementById('cbo-ingredients').classList.toggle('show')">Afficher les ingrédients</a>
+        <div id="cbo-ingredients" class="ingredients">
+            <p>Ingrédients : Pain spécial, poulet pané, bacon, oignons croustillants, fromage, sauce CBO.</p>
+        </div>
+    </div>
+    
+    <!-- Wrap Poulet Bacon -->
+    <div class="burger">
+        <img src="assets/image Burger/Wrap poulet.jfif" alt="Wrap Poulet Bacon">
+        <h3>Wrap Poulet Bacon</h3>
+        <a href="#!" class="toggle-link" onclick="document.getElementById('wrappb-ingredients').classList.toggle('show')">Afficher les ingrédients</a>
+        <div id="wrappb-ingredients" class="ingredients">
+            <p>Ingrédients : Tortilla, poulet pané, bacon, laitue, sauce ranch.</p>
+        </div>
+    </div>
+    
+    <!-- Wrap Chèvre -->
+    <div class="burger">
+        <img src="assets/image Burger/Wrap chevre.jfif" alt="Wrap Chèvre">
+        <h3>Wrap Chèvre</h3>
+        <a href="#!" class="toggle-link" onclick="document.getElementById('wrapchevre-ingredients').classList.toggle('show')">Afficher les ingrédients</a>
+        <div id="wrapchevre-ingredients" class="ingredients">
+            <p>Ingrédients : Tortilla, chèvre, laitue, tomates, sauce balsamique.</p>
+        </div>
+    </div>
+    
+    <!-- McFirst -->
+    <div class="burger">
+        <img src="assets/image Burger/Mc first.jfif" alt="McFirst">
+        <h3>McFirst</h3>
+        <a href="#!" class="toggle-link" onclick="document.getElementById('mcfirst-ingredients').classList.toggle('show')">Afficher les ingrédients</a>
+        <div id="mcfirst-ingredients" class="ingredients">
+            <p>Ingrédients : Pain, steak haché, fromage, laitue, sauce McFirst.</p>
+        </div>
+    </div>
+    
+    <!-- Croque McDo -->
+    <div class="burger">
+        <img src="assets/image Burger/Croc.jfif" alt="Croque McDo">
+        <h3>Croque McDo</h3>
+        <a href="#!" class="toggle-link" onclick="document.getElementById('croque-ingredients').classList.toggle('show')">Afficher les ingrédients</a>
+        <div id="croque-ingredients" class="ingredients">
+            <p>Ingrédients : Pain de mie, jambon, fromage fondu, sauce.</p>
+        </div>
+    </div>
+    
+    </body>
+    </html>

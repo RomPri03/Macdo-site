@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Retour</title>
+    <!--Tous le CSS du Bookstrap-->
+        <!-- Bootstrap Core CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/animate.css" rel="stylesheet">
+        <link href="assets/css/plugins.css" rel="stylesheet">
+    
+        <!-- Custom CSS -->
+        <link href="assets/css/style.css" rel="stylesheet">
+    
+        <!-- Custom Fonts -->
+        <link href="assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/pe-icons.css" rel="stylesheet">
+</head>
+
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Retour A la Page Principal -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="accueil.html"><span class="theme-accent-color">Macdo</span></a> <!-- Lien vers la page principale -->
+            </div>
+    
+            <!-- Tout les Lien de page dans la barre Principal -->
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="menu.html">Menu</a></li> <!-- Va vers la page menu -->
+                    <li><a href="cv.html">CV</a></li> <!-- Va vers la page CV -->
+                    <li><a href="extra.html">Extra</a></li> <!-- Va vers la page Extra -->
+                    <li><a href="about-us.html">A Propos de nous</a></li> <!--Va vers la page A propos de nous -->
+                    <li><a href="rejoignez.html">Rejoint Nous</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<body>
+    
+<section class="white-wrapper">
+    <div class="container mt-5">
+        <h1> Formulaire de Retour</h1>
+        <form action="https://formspree.io/f/movqdqyd" method="POST"> <!--Site qui permet d'envoyer les formulaire vers ma boite mails sans passer par php-->
+            <div class="form-group">
+                <label for="date">Date :</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="food_quality">Qualité de la nourriture (sur 5) :</label>
+                <input type="number" class="form-control" id="food_quality" name="food_quality" min="1" max="5" required>
+            </div>
+
+            <div class="form-group">
+                <label for="temperature">Servi à la bonne température (sur 5) :</label>
+                <input type="number" class="form-control" id="temperature" name="temperature" min="1" max="5" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Service client :</label>
+                <div>
+                    <label for="politeness">Politesse (sur 5) :</label>
+                    <input type="number" class="form-control" id="politeness" name="politeness" min="1" max="5" required>
+                </div>
+                <div>
+                    <label for="helpfulness">Serviable (sur 5) :</label>
+                    <input type="number" class="form-control" id="helpfulness" name="helpfulness" min="1" max="5" required>
+                </div>
+                <div>
+                    <label for="wait_time">Temps d'attente (sur 5) :</label>
+                    <input type="number" class="form-control" id="wait_time" name="wait_time" min="1" max="5" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="cleanliness">Propreté (sur 5) :</label>
+                <input type="number" class="form-control" id="cleanliness" name="cleanliness" min="1" max="5" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ambiance">Ambiance (sur 5) :</label>
+                <input type="number" class="form-control" id="ambiance" name="ambiance" min="1" max="5" required>
+            </div>
+
+            <div class="form-group">
+                <label for="overall_satisfaction">Satisfaction globale (sur 5) :</label>
+                <input type="number" class="form-control" id="overall_satisfaction" name="overall_satisfaction" min="1" max="5" required>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Commentaires :</label>
+                <textarea class="form-control" id="comments" name="comments" rows="4" placeholder="Laissez un commentaire..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Envoyer votre avis</button>
+        </form>
+    </div>
+
+    <script src="assets/js/jquery.js"></script> <!-- Lien vers jQuery -->
+    <script src="assets/js/bootstrap.min.js"></script> <!-- Lien vers Bootstrap JS -->
+</section>
+</body>
+</html>

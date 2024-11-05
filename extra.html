@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveaut&eacute; de McDonald's</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/plugins.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/pe-icons.css" rel="stylesheet">
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Retour A la Page Principal -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="accueil.html"><span class="theme-accent-color">Macdo</span></a> <!-- Lien vers la page principale -->
+                </div>
+        
+                <!-- Tout les Lien de page dans la barre Principal -->
+                <div class="collapse navbar-collapse" id="main-navigation">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="cv.html">CV</a></li> <!-- Va vers la page CV -->
+                        <li><a href="about-us.html">A Propos de nous</a></li> <!--Va vers la page A propos de nous -->
+                        <li><a href="formulaire.html">Formulaire</a></li> <!-- Va vers la page Formulaire-->
+                        <li><a href="rejoignez.html">Rejoint Nous</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+  
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            h1 {
+                text-align: center;
+                color: #d00000;
+            }
+            .burger {
+                display: inline-block;
+                margin: 15px;
+                text-align: center;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: white;
+            }
+            .burger img {
+                width: 200px;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            .ingredients {
+                display: none;
+                margin-top: 10px;
+            }
+            .show {
+                display: block;
+            }
+            .toggle-link {
+                color: #007BFF;
+                text-decoration: none;
+                cursor: pointer;
+            }
+                    /*pour le style sauce vus qu'est different des burger  */
+        .sauce-section {
+            border: 2px solid #ff4500;
+            border-radius: 20px;
+            padding: 20px;
+            background-color: #ffe6e6;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .sauce-section h2 {
+            color: #ff4500;
+        }
+        .sauce {
+            display: inline-block;
+            margin: 20px;
+        }
+        .sauce img {
+            width: 150px;
+            height: auto;
+        }
+        </style>
+    </head>
+    <body>
+    
+    <h1>Nouveautés du Menu McDonald's</h1>
+    
+    <!-- Nuggets Veggie -->
+    <div class="burger">
+        <img src="assets/image Burger/Nuggets veggie.jfif" alt="Nuggets Veggie">
+        <h3>Nuggets Veggie</h3>
+        <a href="#!" class="toggle-link" onclick="document.getElementById('nuggetsveggie-ingredients').classList.toggle('show')">Afficher les ingrédients</a>
+        <div id="nuggetsveggie-ingredients" class="ingredients">
+            <p>Ingrédients : Nuggets végétariens, panure croustillante, servis avec des sauces au choix.</p>
+        </div>
+    </div>
+    
+    <!-- McExtreme -->
+    <div class="burger">
+        <img src="assets/image Burger/Mc extreme.jfif" alt="McExtreme">
+        <h3>McExtreme</h3>
+        <a href="#!" class="toggle-link" onclick="document.getElementById('mcextreme-ingredients').classList.toggle('show')">Afficher les ingrédients</a>
+        <div id="mcextreme-ingredients" class="ingredients">
+            <p>Ingrédients : Pain spécial, steak haché, fromage fondu, bacon, sauce BBQ, oignons grillés.</p>
+        </div>
+    </div>
+    
+    <!-- Filet-O-Fish Deluxe -->
+    <div class="burger">
+        <img src="assets/image Burger/Filet o Fish Deluxe.jfif" alt="Filet-O-Fish Deluxe">
+        <h3>Filet-O-Fish Deluxe</h3>
+        <a href="#!" class="toggle-link" onclick="document.getElementById('filetofshdeluxe-ingredients').classList.toggle('show')">Afficher les ingrédients</a>
+        <div id="filetofshdeluxe-ingredients" class="ingredients">
+            <p>Ingrédients : Pain, poisson pané, sauce tartare, laitue, fromage.</p>
+        </div>
+    </div>
+    
+    <!-- Nouveaux Sauces Piquantes -->
+    <h2 style="text-align: center; color: #ff4500;">Les Nouvelles Sauces Piquantes</h2>
+    
+
+    <div class="single-sauce-section">
+        <img src="assets/image Burger/Hot sauce.webp" alt="Nouvelles Sauces Piquantes">
+        <p style="color:#ddd">
+            Découvrez nos trois nouvelles sauces piquantes pour relever vos plats !
+            Une sauce épicée avec des notes d'ail et de piment rouge, une sauce crémeuse au piment vert
+            avec une touche acidulée, et enfin une sauce ultra-piquante à base de piments habanero pour les amateurs de sensations fortes.
+        </p>
+    </div>
+    
+    </body>
+    </html>
